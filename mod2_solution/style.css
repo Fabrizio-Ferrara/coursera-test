@@ -1,0 +1,89 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  background-color: #fdfae1;
+  margin: 0;
+}
+
+/********** Main title style and positioning **********/
+h1 {
+  color: #00096E;
+  margin-top: 35px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.row{
+  width: 100%;
+}
+
+/********** Text style and positioning **********/
+.text{
+  border: 2px solid black;
+  background-color: grey;
+  font-size: 17px;
+  text-align: justify;
+  color: white;
+  width: 100%;
+  height: 380px;
+  padding: 40px 18px 10px 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/********** Title style **********/
+h2 {
+  text-align: center;
+  font-size: 23px;
+  border: 2px solid black;
+  float: right;
+  position: absolute;
+  padding-right: 7px;
+  padding-left: 7px;
+  top: -2px;
+  right: -2px;
+  color: black;
+}
+
+/********** Titles colors **********/
+#title-1{
+  background-color: #50e4f6;
+}
+
+#title-2{
+  background-color: #1be80b;
+}
+
+#title-3{
+  background-color: #f6f050;
+}
+
+.main_dim, .big_dim {
+  width: 30%;
+  margin-left: 2.5%;
+  float: left;
+}
+
+/********** Tablet devices only **********/
+@media (max-width: 991px) {
+  .text {
+    height: 250px;
+  }
+  .main_dim {
+    width: 46.25%;
+  }
+  .big_dim {
+    width: 95%;
+  }
+}
+
+/********** Phone devices only **********/
+@media (max-width: 767px) {
+  .text {
+    height: 273px;
+  }
+  .main_dim {
+    width: 95%;
+  }
+}
