@@ -81,7 +81,7 @@ h2 {
 /********** Phone devices only **********/
 @media (max-width: 767px) {
   .text {
-    height: 273px;
+    height: 330px;
   }
   .main_dim {
     width: 95%;
