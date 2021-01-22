@@ -1,7 +1,9 @@
+
 * {
   box-sizing: border-box;
   font-family: Helvetica;
   background-color: #fdfae1;
+  margin: 0;
 }
 h1 {
   color: #00096E;
@@ -20,16 +22,14 @@ h1 {
   font-size: 17px;
   text-align: justify;
   color: white;
-  width: 95%;
-  height: 350px;
+  width: 100%;
+  height: 380px;
   padding: 40px 18px 10px 18px;
-  margin-right: 15px;
-  margin-left: 15px;
   margin-bottom: 20px;
   position: relative;
 }
 
-.titolo{
+h2 {
   text-align: center;
   font-size: 23px;
   border: 2px solid black;
@@ -54,50 +54,31 @@ h1 {
   background-color: #f6f050;
 }
 
-@media (min-width: 992px) {
-  .dsk-4, .dsk-6, .dsk-12 
-  {
-    float: left;
-  }
-  .dsk-4 {
-    width: 33.33%;
-  }
-  .dsk-6 {
-    width: 50%;
-  }
-  .dsk-12 {
-    width: 100%;
-  }
+.main_dim, .big_dim {
+  width: 30%;
+  margin-left: 2.5%;
+  float: left;
 }
 
 /********** Tablet devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .tb-4, .tb-6, .tb-12 {
-    float: left;
+@media (max-width: 991px) {
+  .text {
+    height: 250px;
   }
-  .tb-4 {
-    width: 33.33%;
+  .main_dim {
+    width: 46.25%;
   }
-  .tb-6 {
-    width: 50%;
-  }
-  .tb-12 {
-    width: 102.6%;
+  .big_dim {
+    width: 95%;
   }
 }
 
 /********** Phone devices only **********/
 @media (max-width: 767px) {
-  .ph-4, .ph-6, .ph-12 {
-    float: left;
+  .text {
+    height: 273px;
   }
-  .ph-4 {
-    width: 33.33%;
-  }
-  .ph-6 {
-    width: 50%;
-  }
-  .ph-12 {
-    width: 100%;
+  .main_dim {
+    width: 95%;
   }
 }
